@@ -1,0 +1,59 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "allowJs": true,
+        "module": "commonjs",
+        "target": "es2015",
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "paths": {
+            "*": [
+                "./*"
+            ],
+            "pages/*": [
+                "./pages/*"
+            ],
+            "models/*": [
+                "./models/*"
+            ],
+            "test/*": [
+                "./test/*"
+            ],
+        },
+        "outDir": "./lib",
+        "types": [
+            "@wdio/mocha-framework",
+            "node",
+            "chai",
+            "@wdio/sync",
+            "webdriverio/sync",
+            "reflect-metadata",
+            "expect-webdriverio"
+        ],
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true
+    },
+    "include": [
+        "**/*.spec.ts",
+        "**/*.ts",
+        "**/*.js",
+        "**/*.json"
+    ],
+    "exclude": [
+        "./node_modules",
+        "lib"
+    ],
+    "compileOnSave": false
+}
